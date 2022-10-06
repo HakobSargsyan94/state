@@ -1,0 +1,8 @@
+Задание 2 : INSERT INTO `users`(`group_id`, `invited_by_user_id`, `name`, `posts_qty`)
+VALUES (1,1,'User x', 7),(1,1,'User y', 7),(1,1,'User x', 7)
+
+UPDATE `users` SET
+ `group_id`=2,`invited_by_user_id`=2,`name`='Test',`posts_qty`=15
+  WHERE `id` = 3
+
+CREATE INDEX thousand_index ON users (group_id);
